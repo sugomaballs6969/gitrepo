@@ -1,0 +1,16 @@
+ function VerifyAgent() {
+  var session = window.sessionStorage.getItem("token");
+  if (session=="l)!')rfb4885Suw+S5-oSK!rhZqsVwgCW'gK.,dG.O'T%#[Vl;") {
+    Load();
+    } else {
+      if (session=="NY&[}0d8bvIk^bN^ZlN^.o}ks9!_eP-xFts1lo.x7(kr%k&68y") {
+        Load();
+      } else {
+        window.location.replace("https://ggole.neocities.org/Login");
+      }
+        }
+  }
+  VerifyAgent();
+  function Load() {
+    console.log("Session Information Was Correct.");
+    }
